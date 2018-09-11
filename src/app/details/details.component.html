@@ -1,0 +1,136 @@
+<div class="user-details px-4 py-4">
+    <div id="about" class="row">
+        <div class="col-sm-3 px-0 py-0">
+            <img class="details_pic" src="../../assets/img/{{userDetails.picture}}.jpg">
+        </div>
+        <div class="col-sm-9">
+            <div class="display-3 text-center py-0 mb-0 text-uppercase">{{userDetails.surname}}
+                <span class="text-primary"> {{userDetails.shortName}} </span>
+            </div>
+            <h4 class="text-muted text-center py-0 mb-5">Hyderabad, Telangana - 501505.
+                <span class="text-info">{{userDetails.email}}</span>
+            </h4>
+            <p class="lead pl-4">
+                {{userDetails.bio}}
+            </p>
+        </div>
+    </div>
+
+    <div class="text-center social-icons">
+        <ul class="list-inline display-4">
+            <li class="list-inline-item">
+                <a href="{{userDetails.linkedIn}}" target="_blank">
+                    <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
+                </a>
+            </li>
+
+            <li class="list-inline-item">
+                <a href="" target="_blank">
+                    <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="" target="_blank">
+                    <fa-icon [icon]="['fab', 'github']"></fa-icon>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="{{userDetails.facebook}}" target="_blank">
+                    <fa-icon [icon]="['fab', 'facebook']"></fa-icon>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="line"></div>
+    <div id="experience">
+        <h2 class="mb-5">EXPERIENCE</h2>
+        <div class="row">
+            <div class="col-sm-8">
+                <h4>
+                    <strong>{{userDetails.designation}}</strong>
+                </h4>
+                <h5 class="text-muted">VISTEX ASIA PACIFIC PVT. LTD.</h5>
+                <p class="mt-3 text-muted">Worked on the vistex product called GTMS. Developed angular custom components. Developed desinger for dynamic
+                    statements generation.Providing continous support for the GTMS clients.</p>
+            </div>
+            <div class="col-sm-4 text-right text-primary">June 2013 - present</div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div id="education">
+        <h2 class="mb-5">EDUCATION</h2>
+        <div class="row">
+            <div class="col-sm-8">
+                <h4>
+                    <strong class="text-uppercase">{{userDetails.education}}</strong>
+                </h4>
+                <h5 class="text-muted">BACHELOR OF TECHNOLOGY.</h5>
+                <p class="mt-3">GPA: 76% </p>
+            </div>
+            <div class="col-sm-4 text-right text-primary">June 2009 - May 2013</div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div id="skills">
+        <h3 class="mb-4">SKILLS</h3>
+        <h5 class="text-muted mb-3">PROGRAMMING LANGUAGES & TOOLS</h5>
+        <ul class="list-inline display-4 mb-3">
+            <li class="list-inline-item">
+                <fa-icon [icon]="['fab','html5']"></fa-icon>
+            </li>
+            <li class="list-inline-item">
+                <fa-icon [icon]="['fab','css3-alt']"></fa-icon>
+            </li>
+            <li class="list-inline-item">
+                <fa-icon [icon]="['fab','js-square']"></fa-icon>
+            </li>
+            <li class="list-inline-item">
+                <fa-icon [icon]="['fab','angular']"></fa-icon>
+            </li>
+            <li class="list-inline-item">
+                <fa-icon [icon]="['fab','sass']"></fa-icon>
+            </li>
+            <li class="list-inline-item">
+                <fa-icon [icon]="['fab','less']"></fa-icon>
+            </li>
+            <li class="list-inline-item">
+                <fa-icon [icon]="['fab','gulp']"></fa-icon>
+            </li>
+            <li class="list-inline-item">
+                <fa-icon [icon]="['fab','npm']"></fa-icon>
+            </li>
+        </ul>
+        <div>
+            <h5 class="text-muted mb-2">WORKFLOW</h5>
+            <ul class="list-unstyled pl-2 work-flow">
+                <li>
+                    <fa-icon [icon]="['fas','check']"></fa-icon>
+                    <span>Mobile-First, Responsive Design</span>
+                </li>
+                <li>
+                    <fa-icon [icon]="['fas','check']"></fa-icon>
+                    <span>Cross Browser Testing & Debugging</span>
+                </li>
+                <li>
+                    <fa-icon [icon]="['fas','check']"></fa-icon>
+                    <span>Cross Functional Teams</span>
+                </li>
+                <li>
+                    <fa-icon [icon]="['fas','check']"></fa-icon>
+                    <span>Agile Development & Scrum</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div id="interests">
+        <h3>INTERESTS</h3>
+        <ul>
+            <li class="text-muted" *ngFor="let int of userDetails.Interests">
+                {{int.description}}
+            </li>
+        </ul>
+
+    </div>
+</div>

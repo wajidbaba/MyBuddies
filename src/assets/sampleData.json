@@ -1,0 +1,262 @@
+[
+    {
+        "id": 1,
+        "name": "Gujjarlapudi Ramu",
+        "surname": "Gujjarlapudi",
+        "email": "dummy@vistex.com",
+        "education": "Bomma College of Engg. and Tech.",
+        "shortName": "RAMU",
+        "picture": "ramu",
+        "phone": "8919199047",
+        "dateOfBirth": "1990",
+        "designation": "Senior SAP Developer",
+        "linkedIn": "https://in.linkedin.com/in/ramu-gujjarlapudi-10160354/de",
+        "facebook": "https://www.facebook.com/ramu.gujjarlapudi",
+        "experience": "5",
+        "bio": "I'm a SAP Developer with 5 years of experience in developing user interfaces, testing and debugging. Proven ability in optimizing SAP functionality that improves overall product performance.",
+        "Interests": [
+            {
+                "name": "Int1",
+                "description": "Travelling"
+            },
+            {
+                "name": "Int2",
+                "description": "Tv"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": " Budama Nishanth",
+        "surname": "Budama",
+        "shortName": "NISHANTH",
+        "picture": "nishanth",
+        "phone": "9985426848",
+        "email": "dummy@vistex.com",
+        "education": "Sri Indu College of Engg. and Tech.",
+        "linkedIn": "https://in.linkedin.com/in/nishanth-budama-b3b44882",
+        "facebook": "https://www.facebook.com/nishanth.budama",
+        "dateOfBirth": "1992",
+        "designation": "Senior SAP Developer",
+        "bio": "I'm a SAP Developer with 5 years of experience in developing user interfaces, testing and debugging. Proven ability in optimizing SAP functionality that improves overall product performance.",
+        "experience": "5",
+        "Interests": [
+            {
+                "name": "Int1",
+                "description": "games"
+            },
+            {
+                "name": "Int2",
+                "description": "Tv"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Harsh Dand",
+        "surname": "",
+        "shortName": "HARSH DAND",
+        "education": "CVR College of Engg. and Tech.",
+        "picture": "harsh",
+        "phone": "9291242780",
+        "email": "dummy@vistex.com",
+        "dateOfBirth": "1992",
+        "designation": "Senior Web Developer",
+        "linkedIn": "https://in.linkedin.com/in/harshdand",
+        "facebook": "",
+        "bio": "I'm a Web Developer with 5 years of experience in developing user interfaces, testing and debugging. Proven ability in optimizing web functionality that improves overall website performance.",
+        "experience": "5",
+        "Interests": [
+            {
+                "name": "Int1",
+                "description": "games"
+            },
+            {
+                "name": "Int2",
+                "description": "Tv"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Malladi Prashanth",
+        "surname": "Malladi",
+        "shortName": "PRASHANT",
+        "picture": "prashanth",
+        "phone": "8919199047",
+        "email": "dummy@vistex.com",
+        "education": "Gitam University",
+        "dateOfBirth": "1992",
+        "designation": "Senior SAP Developer",
+        "linkedIn": "https://www.linkedin.com/in/malladip",
+        "facebook": "https://www.facebook.com/prashanth.malladi.7",
+        "bio": "I'm a SAP Developer with 5 years of experience in developing user interfaces, testing and debugging. Proven ability in optimizing SAP functionality that improves overall product performance.",
+        "experience": "5",
+        "Interests": [
+            {
+                "name": "Int1",
+                "description": "games"
+            },
+            {
+                "name": "Int2",
+                "description": "Tv"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Moramshetti Rohith",
+        "surname": "Moramshetti",
+        "shortName": "ROHITH",
+        "picture": "rohith",
+        "phone": "9581521532",
+        "education": "Sri Indu College of Engg. and Tech.",
+        "email": "dummy@vistex.com",
+        "dateOfBirth": "1992",
+        "designation": "Senior SAP Developer",
+        "linkedIn": "https://in.linkedin.com/in/rohith-moramshetty-4084a582",
+        "facebook": "https://www.facebook.com/rohith.moramshetty",
+        "bio": "I'm a SAP Developer with 5 years of experience in developing user interfaces, testing and debugging. Proven ability in optimizing SAP functionality that improves overall product performance.",
+        "experience": "5",
+        "Interests": [
+            {
+                "name": "Int1",
+                "description": "games"
+            },
+            {
+                "name": "Int2",
+                "description": "Tv"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Yalamarthy Praveen",
+        "surname": "Yalamarthy",
+        "shortName": "PRAVEEN",
+        "picture": "praveen",
+        "phone": "8885737573",
+        "email": "dummy@vistex.com",
+        "education": "Gitam University",
+        "linkedIn": "https://in.linkedin.com/in/praveen-yalamarthy-23b58858",
+        "facebook": "https://www.facebook.com/praveen.yalamarthy",
+        "dateOfBirth": "1992",
+        "designation": "Senior SAP Developer",
+        "experience": "5",
+        "bio": "I'm a SAP Developer with 5 years of experience in developing user interfaces, testing and debugging. Proven ability in optimizing SAP functionality that improves overall product performance.",
+        "Interests": [
+            {
+                "name": "Int1",
+                "description": "games"
+            },
+            {
+                "name": "Int2",
+                "description": "Tv"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Gorle Ravi",
+        "surname": "Gorle",
+        "shortName": "RAVI TEJA",
+        "picture": "ravi",
+        "phone": "9849395636",
+        "email": "dummy@vistex.com",
+        "education": "JNTU University",
+        "dateOfBirth": "1991",
+        "designation": "Senior SAP Developer",
+        "linkedIn": "https://in.linkedin.com/in/ravi-teja-gorle-59234460",
+        "facebook": "https://www.facebook.com/raviteja.gorle",
+        "experience": "5",
+        "bio": "I'm a SAP Developer with 5 years of experience in developing user interfaces, testing and debugging. Proven ability in optimizing SAP functionality that improves overall product performance.",
+        "Interests": [
+            {
+                "name": "Int1",
+                "description": "games"
+            },
+            {
+                "name": "Int2",
+                "description": "Tv"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Sai Datta Kiran",
+        "surname": "Nanduri",
+        "shortName": "DATTA SAI",
+        "picture": "datta",
+        "phone": "9581481211",
+        "email": "dummy@vistex.com",
+        "education": "Gitam University",
+        "linkedIn": "https://in.linkedin.com/in/datta-nanduri-742b113b",
+        "facebook": "https://www.facebook.com/datta.nanduri",
+        "dateOfBirth": "1991",
+        "designation": "Senior SAP Developer",
+        "bio": "I'm a SAP Developer with 5 years of experience in developing user interfaces, testing and debugging. Proven ability in optimizing SAP functionality that improves overall product performance.",
+        "experience": "5",
+        "Interests": [
+            {
+                "name": "Int1",
+                "description": "games"
+            },
+            {
+                "name": "Int2",
+                "description": "Tv"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "katakam Raj Kumar",
+        "surname": "katakam",
+        "shortName": "RAJ Kumar",
+        "picture": "raj",
+        "phone": "9618067735",
+        "email": "dummy@vistex.com",
+        "education": "Sri Indu College of Engg. and Tech.",
+        "linkedIn": "https://in.linkedin.com/in/rajkumar-katkam-2892061b",
+        "facebook": "https://www.facebook.com/rajkumar.katkam",
+        "dateOfBirth": "1991",
+        "designation": "Senior SAP Developer",
+        "bio": "I'm a SAP Developer with 5 years of experience in developing user interfaces, testing and debugging. Proven ability in optimizing SAP functionality that improves overall product performance.",
+        "experience": "5",
+        "Interests": [
+            {
+                "name": "Int1",
+                "description": "games"
+            },
+            {
+                "name": "Int2",
+                "description": "Tv"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Rachamalla Kiran",
+        "surname": "Rachamalla",
+        "shortName": "KIRAN",
+        "picture": "kiran",
+        "phone": "9951343584",
+        "education": "Sri Indu College of Engg. and Tech.",
+        "email": "dummy@vistex.com",
+        "linkedIn": "https://www.linkedin.com/in/kiran-rachamalla-02a54658",
+        "facebook": "https://www.facebook.com/rachamalla.kiran",
+        "dateOfBirth": "1990",
+        "designation": "Senior SAP Developer",
+        "bio": "I'm a SAP Developer with 5 years of experience in developing user interfaces, testing and debugging. Proven ability in optimizing SAP functionality that improves overall product performance.",
+        "experience": "5",
+        "Interests": [
+            {
+                "name": "Int1",
+                "description": "games"
+            },
+            {
+                "name": "Int2",
+                "description": "Tv"
+            }
+        ]
+    }
+]
