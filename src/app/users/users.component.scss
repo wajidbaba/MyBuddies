@@ -31,11 +31,11 @@
           -webkit-opacity: 0;
           -ms-opacity: 0;
           -o-opacity: 0;
-          transition: .6s ease-in-out;
-          -moz-transition: .6s ease-in-out;
-          -webkit-transition: .6s ease-in-out;
-          -ms-transition: all .6s ease-in-out 0s;
-          -o-transition: .6s ease-in-out;
+          transition: 0.6s cubic-bezier(1, 0, 0, 1);
+          -moz-transition:  0.6s cubic-bezier(1, 0, 0, 1);
+          -webkit-transition:  0.6s cubic-bezier(1, 0, 0, 1);
+          -ms-transition: all  0.6s cubic-bezier(1, 0, 0, 1) 0s;
+          -o-transition:  0.6s cubic-bezier(1, 0, 0, 1);
           transform: rotate(-180deg);
           -moz-transform: rotate(-180deg);
           -webkit-transform: rotate(-180deg);
@@ -56,6 +56,7 @@
           }
           .button {
               position: absolute;
+              opacity: 0;
           }
           p {
               padding-top: 50px;
@@ -100,11 +101,13 @@
               -webkit-opacity: .9;
               -ms-opacity: .9;
               -o-opacity: .9;
-          }
-          .button {
-              top: 145px;
-              left: 130px;
-          }
+              .button {
+                top: 145px;
+                left: 130px;
+                opacity: 1;
+            }
+            }
+         
       }
       .profile_pic {
         width: 100%;
