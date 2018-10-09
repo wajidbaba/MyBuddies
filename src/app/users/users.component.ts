@@ -11,12 +11,36 @@ export class UsersComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.dataService.getUsers().subscribe(
-      res => {
-        this.users = res,
-          this.dataService.setData(this.users)
-      }
-    );
+    //using local json
+    // this.dataService.getUsers().subscribe(
+    //   res => {
+    //     this.users = res,
+    //       this.dataService.setData(this.users)
+    //   }
+    // );
+
+
+    // Using firebase Database
+    let data = this.dataService.getUsers();
+
+    data.snapshotChanges().subscribe(item => {
+      item.forEach(element => {
+        let y = element.payload.toJSON(),
+          interests = y['Interests'],
+          interestesTemp = [];
+
+        for (var key in interests) {
+          if (interests.hasOwnProperty(key)) {
+            interestesTemp.push(interests[key]);
+          }
+        }
+        y['Interests'] = interestesTemp;
+        y['$key'] = element.key;
+        this.users.push(y);
+      });
+      this.dataService.setData(this.users);
+    });
+
   }
 
 }

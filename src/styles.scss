@@ -12,3 +12,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
 }
+
+.edit-modal {
+    .modal-dialog{
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+}

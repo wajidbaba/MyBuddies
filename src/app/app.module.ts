@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { DetailsComponent } from './details/details.component';
+import { EditDetailsComponent } from './edit-details/edit-details.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -43,19 +45,49 @@ library.add(faFacebook);
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 library.add(faCheck);
 
+// Angular Firebase Setup
+
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AngularFireDatabaseModule } from "@angular/fire/database";
+
+//angualr bootstrap
+import { NgbModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { ModalComponent } from './modal/modal.component';
+
+//Forms module
+import { FormsModule } from '@angular/forms';
+
+//Toastr Module
+import { ToastrModule  } from 'ngx-toastr';
+
 @NgModule({
+  entryComponents: [
+    EditDetailsComponent
+  ],
+
   declarations: [
     AppComponent,
     UsersComponent,
-    DetailsComponent
+    DetailsComponent,
+    ModalComponent,
+    EditDetailsComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    //or AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase, 'ng6-proj'),
+    AngularFireDatabaseModule,
+    NgbModule.forRoot(),
+    FormsModule,
+    ToastrModule.forRoot()
+
   ],
-  providers: [],
+  providers: [NgbActiveModal],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

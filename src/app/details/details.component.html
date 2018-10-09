@@ -1,7 +1,14 @@
 <div class="user-details px-4 py-4">
+    <div class="row">
+        <div class="col align-self-end text-right py-2">
+            <button class="btn-primary" (click)="openModal()">
+                Edit
+            </button>
+        </div>
+    </div>
     <div id="about" class="row">
         <div class="col-sm-3 px-0 py-0">
-            <img class="details_pic" src="../../assets/img/{{userDetails.picture}}.jpg">
+            <!-- <img class="details_pic" src="../../assets/img/{{userDetails.picture}}.jpg"> -->
         </div>
         <div class="col-sm-9">
             <div class="display-3 text-center py-0 mb-0 text-uppercase">{{userDetails.surname}}
@@ -51,8 +58,8 @@
                     <strong>{{userDetails.designation}}</strong>
                 </h4>
                 <h5 class="text-muted">VISTEX ASIA PACIFIC PVT. LTD.</h5>
-                <p class="mt-3 text-muted">Worked on the vistex product called GTMS. Developed angular custom components. Developed desinger for dynamic
-                    statements generation.Providing continous support for the GTMS clients.</p>
+                <p class="mt-3 text-muted">Worked on the vistex product called GTMS. Developed angular custom components.
+                    Developed desinger for dynamic statements generation.Providing continous support for the GTMS clients.</p>
             </div>
             <div class="col-sm-4 text-right text-primary">June 2013 - present</div>
         </div>
@@ -66,7 +73,7 @@
                     <strong class="text-uppercase">{{userDetails.education}}</strong>
                 </h4>
                 <h5 class="text-muted">BACHELOR OF TECHNOLOGY.</h5>
-                <p class="mt-3">GPA: 76% </p>
+                <p class="mt-3">GPA: {{userDetails.gpa}} </p>
             </div>
             <div class="col-sm-4 text-right text-primary">June 2009 - May 2013</div>
         </div>

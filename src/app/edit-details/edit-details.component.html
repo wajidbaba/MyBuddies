@@ -1,0 +1,51 @@
+<app-modal title="{{title}}" class="edit-modal" (saveClick)="onSaveClick(userDetails)">
+    <form>
+        <div class="form-group">
+          <label for="formGroupExampleInput">About</label>
+          <textarea type="text" class="form-control" 
+          name="bio"
+          [(ngModel)] = "userDetails.bio"
+          id="bio" placeholder="About yourself"></textarea>
+        </div>
+        <div class="form-group">
+            <label >Email Address</label>
+            <input type="email" name="email" class="form-control" id="email"
+            [(ngModel)] = "userDetails.email"
+              placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+        <div class="form-group">
+            <label >Designation</label>
+            <select class="form-control" id="designation" name="designation"
+              [(ngModel)] = "userDetails.designation">
+              <option>SAP Developer</option>
+              <option>Senior SAP Developer</option>
+              <option>Web Developer</option>
+              <option>Senior Web Developer</option>
+              <option>Associate Solution Architect</option>
+            </select>
+          </div>
+        <div class="form-group">
+            <label >University College</label>
+            <input type="text" class="form-control" id="education"
+            name="education"
+            [(ngModel)] = "userDetails.education"
+             aria-describedby="education" placeholder="University College">
+          </div>
+          <div class="form-group">
+            <label >Gpa</label>
+            <input type="text" class="form-control" id="gpa" name="gpa" aria-describedby="gpa"
+            [(ngModel)] = "userDetails.gpa"
+             placeholder="Gpa">
+          </div>
+          <div class="form-group">
+            <label >Interests</label>
+            <textarea type="text" class="form-control"
+            name="interest"
+            (blur)="onInterestBlur(interestsFormatted)"
+            [(ngModel)] = "interestsFormatted"
+            id="interest" placeholder="Type ';' separated"></textarea>
+            <small id="interestHelp" class="form-text text-muted">Type interests by <strong>';'</strong> separated</small>
+          </div>
+      </form>
+</app-modal>
