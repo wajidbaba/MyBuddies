@@ -22,6 +22,7 @@ export class EditDetailsComponent implements OnInit {
     this.interestsFormatted = interests.split(';');
   }
 
+  
   prepareInterestsArray(userDetails) {
     let arrayTemp = [];
     for (let i = 0; i < this.interestsFormatted.length; i++) {
