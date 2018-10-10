@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { DataService } from '../data.service';
 import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrService } from "ngx-toastr";
+import { userConfig } from '../user.config';
 
 @Component({
   selector: 'app-edit-details',
@@ -10,8 +11,9 @@ import { ToastrService } from "ngx-toastr";
 })
 export class EditDetailsComponent implements OnInit {
 
-  @Input() userDetails = {};
+  @Input() userDetails: userConfig;
   @Input() interestsFormatted: any;
+  @Input() title: string;
 
   constructor(private dataService: DataService,
     public activeModal: NgbActiveModal, private toastr: ToastrService) { }
